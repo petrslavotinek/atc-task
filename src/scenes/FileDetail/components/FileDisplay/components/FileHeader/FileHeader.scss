@@ -1,0 +1,19 @@
+@import "scenes/styles/_variables";
+
+.FileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $double-spacing;
+  background-color: $grey;
+  margin: $spacing 0;
+}
+
+.FileHeader__name {
+  font-size: 1.2em;
+}
+
+.FileHeader__date {
+  color: $font-color-light;
+  font-size: .9em;
+}

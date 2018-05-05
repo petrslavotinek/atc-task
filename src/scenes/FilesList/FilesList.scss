@@ -1,0 +1,11 @@
+@import "scenes/styles/_variables";
+
+.FilesList {
+  max-width: $listWidth;
+  margin: 0 auto;
+
+  .FileInput {
+    height: $listItemHeight;
+    margin-top: $spacing;
+  }
+}

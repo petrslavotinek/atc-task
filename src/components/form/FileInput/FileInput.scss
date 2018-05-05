@@ -1,0 +1,33 @@
+@import "scenes/styles/_variables";
+
+.FileInput__input {
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+
+  &:focus {
+    & + .FileInput__label {
+      outline: 1px dotted $dark-grey;
+    }
+  }
+}
+
+.FileInput__label {
+  font-size: 1.4em;
+  font-weight: 700;  
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  color: #fff;
+
+  svg {
+    margin-right: $spacing;
+  }
+}

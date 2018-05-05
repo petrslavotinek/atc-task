@@ -1,0 +1,19 @@
+.ListItem {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #EEE;
+  padding: 20px; }
+
+.ListItem__link {
+  font-size: 1.1em;
+  color: #403F4C; }
+
+.ListItem__icon {
+  margin-right: 10px; }
+
+.ListItem__date {
+  margin-top: 10px;
+  font-size: .8em;
+  color: #a5a4b3; }

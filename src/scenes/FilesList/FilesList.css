@@ -1,0 +1,6 @@
+.FilesList {
+  max-width: 800px;
+  margin: 0 auto; }
+  .FilesList .FileInput {
+    height: 80px;
+    margin-top: 10px; }

@@ -1,0 +1,13 @@
+.SectionHeader {
+  padding: 20px;
+  background-color: #0099CC; }
+
+.SectionHeader__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em; }
+  .SectionHeader__link:hover {
+    text-decoration: underline; }
+
+.SectionHeader__link__icon {
+  margin-right: 10px; }

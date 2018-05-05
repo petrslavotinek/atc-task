@@ -1,0 +1,14 @@
+.FileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #EEE;
+  margin: 10px 0; }
+
+.FileHeader__name {
+  font-size: 1.2em; }
+
+.FileHeader__date {
+  color: #a5a4b3;
+  font-size: .9em; }

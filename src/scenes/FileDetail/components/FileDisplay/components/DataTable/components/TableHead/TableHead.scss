@@ -1,0 +1,9 @@
+@import "scenes/styles/_variables";
+
+.TableHead {
+  th {
+    text-align: left;
+    padding: $spacing;
+    background-color: $darker-grey;
+  }
+}

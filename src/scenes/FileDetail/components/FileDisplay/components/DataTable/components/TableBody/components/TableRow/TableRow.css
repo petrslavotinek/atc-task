@@ -1,0 +1,15 @@
+.TableRow td {
+  padding: 0 10px;
+  height: 35px;
+  border: 1px solid #d5d5d5;
+  vertical-align: middle; }
+  .TableRow td:first-child {
+    padding: 0;
+    width: 35px;
+    text-align: center; }
+
+.TableRow.TableRow--odd td {
+  background-color: #EEE; }
+
+.TableRow__nested > td {
+  padding: 20px; }

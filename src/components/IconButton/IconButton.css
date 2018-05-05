@@ -1,0 +1,11 @@
+.IconButton {
+  background: transparent;
+  width: 33px;
+  height: 33px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 50%; }
+  .IconButton:hover {
+    background: #403F4C;
+    color: #EEE; }

@@ -1,0 +1,23 @@
+.FileInput__input {
+  width: .1px;
+  height: .1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+  .FileInput__input:focus + .FileInput__label {
+    outline: 1px dotted #403F4C; }
+
+.FileInput__label {
+  font-size: 1.4em;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #0099CC;
+  color: #fff; }
+  .FileInput__label svg {
+    margin-right: 10px; }

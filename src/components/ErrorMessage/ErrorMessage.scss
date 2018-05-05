@@ -1,0 +1,10 @@
+@import "scenes/styles/_variables";
+
+.ErrorMessage {
+  text-align: center;
+  background-color: $red;
+  color: #fff;
+  padding: 20px;
+  font-size: 1.1em;
+  margin-top: $spacing;
+}

@@ -1,0 +1,11 @@
+@import "scenes/styles/_variables";
+
+.DataTable {
+  overflow-x: auto;
+}
+
+.DataTable__table {
+  width: 100%;
+  border: 1px solid $darker-grey;
+  border-collapse: collapse;
+}

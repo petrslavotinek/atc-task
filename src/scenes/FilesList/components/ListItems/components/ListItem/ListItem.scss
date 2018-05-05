@@ -1,0 +1,25 @@
+@import "scenes/styles/_variables";
+
+.ListItem {
+  margin-top: $spacing;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: $grey;
+  padding: $double-spacing;
+}
+
+.ListItem__link {
+  font-size: 1.1em;
+  color: $font-color;
+}
+
+.ListItem__icon {
+  margin-right: $spacing;
+}
+
+.ListItem__date {
+  margin-top: $spacing;
+  font-size: .8em;
+  color: $font-color-light;
+}

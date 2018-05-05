@@ -1,0 +1,28 @@
+@import "scenes/styles/_variables";
+
+.TableRow {
+  td {
+    padding: 0 $spacing;
+    height: 35px;
+    border: 1px solid $darker-grey;
+    vertical-align: middle;
+
+    &:first-child {
+      padding: 0;
+      width: 35px;
+      text-align: center;
+    }
+  }
+
+  &.TableRow--odd {
+    td {
+      background-color: $grey;
+    }
+  }
+}
+
+.TableRow__nested {
+  & > td {
+    padding: $double-spacing;
+  }
+}

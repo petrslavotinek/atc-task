@@ -1,0 +1,13 @@
+$grey: #EEE;
+$blue: #0099CC;
+$red: #FE4A49;
+$darker-grey: darken($grey, 10%);
+$dark-grey: #403F4C;
+
+$font-color: $dark-grey;
+$font-color-light: lighten($font-color, 40%);
+
+$listWidth: 800px;
+$listItemHeight: 80px;
+$spacing: 10px;
+$double-spacing: 2*$spacing;
