@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
 export const kidShape = PropTypes.shape({
+  name: PropTypes.string.isRequired,
   headers: PropTypes.arrayOf(PropTypes.string).isRequired,
-  items: PropTypes.array.isRequired,
-  name: PropTypes.string.isRequired
+  items: PropTypes.array.isRequired
 });
 
 export const itemShape = PropTypes.shape({
@@ -14,6 +14,7 @@ export const itemShape = PropTypes.shape({
 
 export const dataShape = PropTypes.shape({
   headers: PropTypes.arrayOf(PropTypes.string).isRequired,
+  hasItems: PropTypes.bool.isRequired,
   items: PropTypes.arrayOf(itemShape).isRequired
 });
 

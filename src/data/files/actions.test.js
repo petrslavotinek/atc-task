@@ -1,7 +1,7 @@
 import actions from './actions';
 
 describe('readFile actions', () => {
-  test('creates request action', () => {
+  it('should create request action', () => {
     const action = actions.readFile.request();
     expect(action).toEqual({
       type: 'files/READ/REQUEST',
@@ -9,7 +9,7 @@ describe('readFile actions', () => {
     });
   });
 
-  test('creates success action', () => {
+  it('should create success action', () => {
     const action = actions.readFile.success({ prop: 'value' });
     expect(action).toEqual({
       type: 'files/READ/SUCCESS',
@@ -21,7 +21,7 @@ describe('readFile actions', () => {
     });
   });
 
-  test('creates error action', () => {
+  it('should create error action', () => {
     const action = actions.readFile.error({ prop: 'value' });
     expect(action).toEqual({
       type: 'files/READ/ERROR',
@@ -35,7 +35,7 @@ describe('readFile actions', () => {
 });
 
 describe('loadFiles actions', () => {
-  test('creates request action', () => {
+  it('should create request action', () => {
     const action = actions.loadFiles.request();
     expect(action).toEqual({
       type: 'files/LOAD/REQUEST',
@@ -43,7 +43,7 @@ describe('loadFiles actions', () => {
     });
   });
 
-  test('creates success action', () => {
+  it('should create success action', () => {
     const action = actions.loadFiles.success([{ prop: 'value' }]);
     expect(action).toEqual({
       type: 'files/LOAD/SUCCESS',
@@ -55,7 +55,7 @@ describe('loadFiles actions', () => {
     });
   });
 
-  test('creates error action', () => {
+  it('should create error action', () => {
     const action = actions.loadFiles.error({ prop: 'value' });
     expect(action).toEqual({
       type: 'files/LOAD/ERROR',
@@ -69,7 +69,7 @@ describe('loadFiles actions', () => {
 });
 
 describe('deleteFile actions', () => {
-  test('creates request action', () => {
+  it('should create request action', () => {
     const action = actions.deleteFile.request();
     expect(action).toEqual({
       type: 'files/DELETE/REQUEST',
@@ -77,7 +77,7 @@ describe('deleteFile actions', () => {
     });
   });
 
-  test('creates success action', () => {
+  it('should create success action', () => {
     const action = actions.deleteFile.success(1);
     expect(action).toEqual({
       type: 'files/DELETE/SUCCESS',
@@ -87,7 +87,7 @@ describe('deleteFile actions', () => {
     });
   });
 
-  test('creates error action', () => {
+  it('should create error action', () => {
     const action = actions.deleteFile.error({ prop: 'value' });
     expect(action).toEqual({
       type: 'files/DELETE/ERROR',

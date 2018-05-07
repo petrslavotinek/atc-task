@@ -14,9 +14,13 @@ export const convertData = (data) => {
 
   data = getValidItems(data);
 
+  const headers = collectHeaders(data);
+  const items = convertItems(data);
+
   return {
-    headers: collectHeaders(data),
-    items: convertItems(data)
+    headers,
+    items,
+    hasItems: items.length > 0
   };
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { fileShape } from 'scenes/FileDetail/propTypeShapes';
 import FileHeader from './components/FileHeader/FileHeader';
 import DataTable from './components/DataTable/DataTable';
+import InvalidDataInfo from './components/InvalidDataInfo/InvalidDataInfo';
 
 const propTypes = {
   file: fileShape.isRequired
@@ -16,13 +17,17 @@ const FileDisplay = ({
 }) => {
   return (
     <React.Fragment>
-      <FileHeader 
+      <FileHeader
         name={name}
         date={date}
       />
-      <DataTable 
-        data={data}
-      />
+      {data.hasItems
+        ?
+        <DataTable
+          data={data}
+        />
+        : <InvalidDataInfo />
+      }
     </React.Fragment>
   );
 };

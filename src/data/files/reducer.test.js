@@ -21,7 +21,7 @@ describe('files reducer', () => {
     error: null
   };
 
-  test('handles readFile request', () => {
+  it('should handle readFile request', () => {
     const action = actions.readFile.request();
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -29,7 +29,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles readFile success', () => {
+  it('should handle readFile success', () => {
     const action = actions.readFile.success(file1);
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -39,7 +39,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles readFile error', () => {
+  it('should handle readFile error', () => {
     const action = actions.readFile.error('msg');
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -47,7 +47,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles loadFiles request', () => {
+  it('should handle loadFiles request', () => {
     const action = actions.loadFiles.request();
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -55,7 +55,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles loadFiles success', () => {
+  it('should handle loadFiles success', () => {
     const action = actions.loadFiles.success({ '1': file1, '2': file2 });
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -66,7 +66,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles loadFiles error', () => {
+  it('should handle loadFiles error', () => {
     const action = actions.loadFiles.error('msg');
     expect(reducer({}, action)).toEqual({
       ...defaultState,
@@ -74,7 +74,7 @@ describe('files reducer', () => {
     });
   });
 
-  test('handles deleteFile success', () => {
+  it('should handle deleteFile success', () => {
     const initialState = { files: { '1': file1, '2': file2 } };
     const action = actions.deleteFile.success('2');
     expect(reducer(initialState, action)).toEqual({

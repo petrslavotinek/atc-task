@@ -28,17 +28,17 @@ describe('selector functions', () => {
     }
   };
 
-  test('gets isLoading', () => {
+  it('should get isLoading', () => {
     const isLoading = selectors.isLoading(state);
     expect(isLoading).toBeFalsy();
   });
 
-  test('gets isReading', () => {
+  it('should get isReading', () => {
     const isReading = selectors.isReading(state);
     expect(isReading).toBeTruthy();
   });
 
-  test('gets files', () => {
+  it('should get files', () => {
     const files = selectors.getFiles(state);
     expect(files).toEqual([{
       id: 1,
@@ -51,13 +51,14 @@ describe('selector functions', () => {
     }])
   });
 
-  test('gets file', () => {
+  it('should get file', () => {
     const file = selectors.getFile(state)(2);
     expect(file).toEqual({
       name: 'file_2.json',
       date: new Date(2018, 0, 1, 13, 0, 0),
       data: {
         headers: ['prop1'],
+        hasItems: true,
         items: [{
           data: {
             prop1: 'value1'
@@ -69,7 +70,7 @@ describe('selector functions', () => {
     });
   });
 
-  test('gets error', () => {
+  it('should get error', () => {
     const error = selectors.getError(state);
     expect(error).toBe('msg');
   });
